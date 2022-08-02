@@ -58,7 +58,7 @@ jobs:
           docker build -f Dockerfile-dev -t ${{ secrets.DOCKER_REPO }}/sample-test .
           docker push ${{ secrets.DOCKER_REPO }}/sample-test
           
-    ## deploy to develop
+    ## deploy to develop with ssh
     - name: Deploy to dev
       uses: appleboy/ssh-action@master
       id: deploy-dev
