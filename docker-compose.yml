@@ -1,0 +1,8 @@
+version: "3"
+services:
+  sample-test:
+    image: miki308/sample-test
+    restart: always
+    container_name: sample-test
+    ports:
+      - 8080:8080
